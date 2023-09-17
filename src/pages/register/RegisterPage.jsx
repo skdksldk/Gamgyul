@@ -1,24 +1,38 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
-import MainLayout from "../../components/MainLayout";
+import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+
+import MainLayout from "../../components/MainLayout";
 import { signup } from "../../services/index/users";
+import { userActions } from "../../store/reducers/userReducers";
 
 const RegisterPage = () => {
- const { mutate, isLoading } = useMutation({
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const userState = useSelector((state) => state.user);
+
+  const { mutate, isLoading } = useMutation({
     mutationFn: ({ name, email, password }) => {
-      return signup({ name, email, password});
-   },
-   onSucess: (data) => {
-    console.log(data);
-   },
-   onError: (error) => {
-    toast.error(error.message)
-    console.log(error);
-   },
+      return signup({ name, email, password });
+    },
+    onSuccess: (data) => {
+      dispatch(userActions.setUserInfo(data));
+      localStorage.setItem("account", JSON.stringify(data));
+    },
+    onError: (error) => {
+      toast.error(error.message);
+      console.log(error);
+    },
   });
+
+  useEffect(() => {
+    if (userState.userInfo) {
+      navigate("/");
+    }
+  }, [navigate, userState.userInfo]);
 
   const {
     register,
@@ -30,7 +44,7 @@ const RegisterPage = () => {
       name: "",
       email: "",
       password: "",
-      confirmPasword: "",
+      confirmPassword: "",
     },
     mode: "onChange",
   });
@@ -46,10 +60,10 @@ const RegisterPage = () => {
     <MainLayout>
       <section className="container mx-auto px-5 py-10">
         <div className="w-full max-w-sm mx-auto">
-            <h1 className="font-roboto text-2x1 font-bold text-center text-dark-hard mb-8">
-                Sign Up
-            </h1>
-            <form onSubmit={handleSubmit(submitHandler)}>
+          <h1 className="font-roboto text-2xl font-bold text-center text-dark-hard mb-8">
+            Sign Up
+          </h1>
+          <form onSubmit={handleSubmit(submitHandler)}>
             <div className="flex flex-col mb-6 w-full">
               <label
                 htmlFor="name"
@@ -199,7 +213,7 @@ const RegisterPage = () => {
         </div>
       </section>
     </MainLayout>
-  )
-}
+  );
+};
 
-export default RegisterPage
+export default RegisterPage;
