@@ -88,7 +88,9 @@ const Header = () => {
     <section className="sticky top-0 left-0 right-0 z-50 bg-white">
       <header className="container mx-auto px-5 flex justify-between py-4 items-center">
         <div>
+         <a href="/">
           <img className="w-16" src={images.Logo} alt="logo" />
+         </a>
         </div>
         <div className="lg:hidden z-50">
           {navIsVisible ? (
@@ -118,7 +120,7 @@ const Header = () => {
                     className="flex gap-x-1 items-center mt-5 lg:mt-0 border-2 border-orange-500 px-6 py-2 rounded-full text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition-all duration-300"
                     onClick={() => setProfileDrowpdown(!profileDrowpdown)}
                   >
-                    <span>Profile</span>
+                    <span>Accout</span>
                     <MdKeyboardArrowDown />
                   </button>
                   <div
@@ -131,7 +133,7 @@ const Header = () => {
                         type="button"
                         className="hover:bg-dark-hard hover:text-white px-4 py-2 text-white lg:text-dark-soft"
                       >
-                        Dashboard
+                        Profile Page
                       </button>
                       <button
                         onClick={logoutHandler}
