@@ -4,6 +4,8 @@ import Post1Image from "../assets/posts/post1.png";
 import PostProfileImage from "../assets/posts/post-profile.png";
 import CtaImage from "../assets/CtaImage.png";
 import Symbollogo from "../assets/Symbollogo.png";
+const samplePostImage = "/images/sample.png";
+const userImage = "/images/user.png";
 
 const images = {
   Logo,
@@ -12,6 +14,8 @@ const images = {
   PostProfileImage,
   CtaImage,
   Symbollogo,
+  samplePostImage,
+  userImage,
 };
 
 export default images;
