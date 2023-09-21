@@ -193,7 +193,7 @@ const RegisterPage = () => {
             <button
               type="submit"
               disabled={!isValid || isLoading}
-              className="bg-primary text-white font-bold text-lg py-4 px-8 w-full rounded-lg my-6 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="bg-primary text-white font-bold text-lg py-4 px-8 w-full rounded-lg mb-6 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               Register
             </button>
