@@ -90,7 +90,7 @@ const ArticleDetailPage = () => {
           </article>
           <div>
             <SuggestedPosts
-              header="Gamgyul Farm"
+              header="Latest Article"
               posts={postsData}
               tags={data?.tags}
               className="mt-8 lg:mt-0 lg:max-w-xs"
