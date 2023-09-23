@@ -80,7 +80,10 @@ const ArticleDetailPage = () => {
             <h1 className="text-xl font-medium font-roboto mt-4 text-dark-hard md:text-[26px]">
               {data?.title}
             </h1>
-            <div className="mt-4 prose prose-sm sm:prose-base">{body}</div>
+            <div className="mt-4 prose prose-sm sm:prose-base">
+              {data?.caption}
+              {body}
+            </div>
             <CommentsContainer
               comments={data?.comments}
               className="mt-10"
@@ -91,7 +94,7 @@ const ArticleDetailPage = () => {
           <div>
             <SuggestedPosts
               header="Latest Article"
-              posts={postsData}
+              posts={postsData?.data}
               tags={data?.tags}
               className="mt-8 lg:mt-0 lg:max-w-xs"
             />
