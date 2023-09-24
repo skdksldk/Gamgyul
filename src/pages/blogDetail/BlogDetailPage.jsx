@@ -13,6 +13,7 @@ import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
 import ErrorMessage from "../../components/ErrorMessage";
 import { useSelector } from "react-redux";
 import parseJsonToHtml from "../../utils/parseJsonToHtml";
+import Editor from "../../components/editor/Editor";
 
 const BlogDetailPage = () => {
   const { slug } = useParams();
@@ -70,9 +71,10 @@ const BlogDetailPage = () => {
             <h1 className="text-xl font-medium font-roboto mt-4 text-dark-hard md:text-[26px]">
               {data?.title}
             </h1>
-            <div className="mt-4 prose prose-sm sm:prose-base">
-              {data?.caption}
-              {body}
+            <div className="w-full">
+              {!isLoading && !isError && (
+                <Editor content={data?.body} editable={false} />
+              )}
             </div>
             <CommentsContainer
               comments={data?.comments}

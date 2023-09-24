@@ -26,22 +26,22 @@ const ManagePosts = () => {
   });
 
   const { mutate: mutateDeletePost, isLoading: isLoadingDeletePost } =
-  useMutation({
-    mutationFn: ({ slug, token }) => {
-      return deletePost({
-        slug,
-        token,
-      });
-    },
-    onSuccess: (data) => {
-      queryClient.invalidateQueries(["posts"]);
-      toast.success("Post is deleted");
-    },
-    onError: (error) => {
-      toast.error(error.message);
-      console.log(error);
-    },
-  });
+    useMutation({
+      mutationFn: ({ slug, token }) => {
+        return deletePost({
+          slug,
+          token,
+        });
+      },
+      onSuccess: (data) => {
+        queryClient.invalidateQueries(["posts"]);
+        toast.success("Post is deleted");
+      },
+      onError: (error) => {
+        toast.error(error.message);
+        console.log(error);
+      },
+    });
 
   useEffect(() => {
     if (isFirstRun) {
@@ -155,9 +155,9 @@ const ManagePosts = () => {
                               <a href="/" className="relative block">
                                 <img
                                   src={
-                                    post?.image
+                                    post?.photo
                                       ? stables.UPLOAD_FOLDER_BASE_URL +
-                                        post?.image
+                                        post?.photo
                                       : images.samplePostImage
                                   }
                                   alt={post.title}
@@ -245,5 +245,5 @@ const ManagePosts = () => {
     </div>
   );
 };
-  
+
 export default ManagePosts;
