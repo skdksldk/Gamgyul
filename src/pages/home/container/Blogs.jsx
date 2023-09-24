@@ -40,10 +40,6 @@ const Blogs = () => {
           ))
         )}
       </div>
-      <button className="mx-auto flex items-center gap-x-2 font-bold text-primary border-2 border-primary px-6 py-3 rounded-lg">
-        <span>More blogs</span>
-        <FaArrowRight className="w-3 h-3" />
-      </button>
     </section>
   );
 };
