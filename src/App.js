@@ -10,6 +10,7 @@ import ProfilePage from "./pages/profile/ProfilePage";
 import AdminLayout from "./pages/admin/AdminLayout";
 import NewPost from "./pages/admin/screens/posts/NewPost";
 import ManagePosts from "./pages/admin/screens/posts/ManagePosts";
+import EditPost from "./pages/admin/screens/posts/EditPost";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="posts/new" element={<NewPost />} />
           <Route path="posts/manage" element={<ManagePosts />} />
+          <Route path="posts/manage/edit/:slug" element={<EditPost />} />
         </Route>
       </Routes>
       <Toaster />
