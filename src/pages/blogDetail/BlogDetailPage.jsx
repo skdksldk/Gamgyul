@@ -16,11 +16,11 @@ import { images, stables } from "../../constants";
 import SuggestedPosts from "./container/SuggestedPosts";
 import { useQuery } from "@tanstack/react-query";
 import { getAllPosts, getSinglePost } from "../../services/index/posts";
-import ArticleDetailSkeleton from "./components/ArticleDetailSkeleton";
+import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
 import ErrorMessage from "../../components/ErrorMessage";
 import { useSelector } from "react-redux";
 
-const ArticleDetailPage = () => {
+const BlogDetailPage = () => {
   const { slug } = useParams();
   const userState = useSelector((state) => state.user);
   const [breadCrumbsData, setbreadCrumbsData] = useState([]);
@@ -33,7 +33,7 @@ const ArticleDetailPage = () => {
       setbreadCrumbsData([
         { name: "Home", link: "/" },
         { name: "Blog", link: "/blog" },
-        { name: "Article title", link: `/blog/${data.slug}` },
+        { name: "Blog title", link: `/blog/${data.slug}` },
       ]);
       setBody(
         parse(
@@ -51,12 +51,12 @@ const ArticleDetailPage = () => {
   return (
     <MainLayout>
       {isLoading ? (
-        <ArticleDetailSkeleton />
+        <BlogDetailSkeleton />
       ) : isError ? (
         <ErrorMessage message="Couldn't fetch the post detail" />
       ) : (
         <section className="container mx-auto max-w-5xl flex flex-col px-5 py-5 lg:flex-row lg:gap-x-5 lg:items-start">
-          <article className="flex-1">
+          <blog className="flex-1">
             <BreadCrumbs data={breadCrumbsData} />
             <img
               className="rounded-xl w-full"
@@ -90,10 +90,10 @@ const ArticleDetailPage = () => {
               logginedUserId={userState?.userInfo?._id}
               postSlug={slug}
             />
-          </article>
+          </blog>
           <div>
             <SuggestedPosts
-              header="Latest Article"
+              header="Latest Blog"
               posts={postsData?.data}
               tags={data?.tags}
               className="mt-8 lg:mt-0 lg:max-w-xs"
@@ -114,4 +114,4 @@ const ArticleDetailPage = () => {
   );
 };
 
-export default ArticleDetailPage;
+export default BlogDetailPage;

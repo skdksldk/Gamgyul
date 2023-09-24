@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { images, stables } from "../constants";
 import { Link } from "react-router-dom";
 
-const ArticleCard = ({ post, className }) => {
+const BlogCard = ({ post, className }) => {
   return (
     <div
       className={`rounded-xl overflow-hidden shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ${className}`}
@@ -74,4 +74,4 @@ const ArticleCard = ({ post, className }) => {
   );
 };
 
-export default ArticleCard;
+export default BlogCard;
