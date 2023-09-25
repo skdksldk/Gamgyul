@@ -142,9 +142,7 @@ const EditPost = () => {
                 </Link>
               ))}
             </div>
-            <h1 className="text-xl font-medium font-roboto mt-4 text-dark-hard md:text-[26px]">
-              {data?.title}
-            </h1>
+           
             <div className="w-full">
               {!isLoading && !isError && (
                 <Editor
