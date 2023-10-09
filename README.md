@@ -72,7 +72,7 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac
 
 ## 💻 배포 링크
 
-Gamgyul(https://gamgyul-demo.onrender.com/)
+[Gamgyul](https://gamgyul-demo.onrender.com/)
 
 
 ## 💡 Gamgyul Blog를 코딩한 이유
