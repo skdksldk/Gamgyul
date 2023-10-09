@@ -72,7 +72,7 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac
 
 ## 💻 데모
 
-[Gamgyul](https://subtle-kulfi-8c02b8.netlify.app//)
+[Gamgyul](https://vermillion-chaja-b8c8df.netlify.app/)
 
 
 ## 💡 Gamgyul Blog를 코딩한 이유
