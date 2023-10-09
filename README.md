@@ -70,9 +70,9 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/16e192dc-d830-4410-b5c4-b0a7
 https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac95734b88
 
 
-## 💻 배포 링크
+## 💻 데모
 
-[Gamgyul](https://gamgyul-demo.onrender.com/)
+[Gamgyul](https://subtle-kulfi-8c02b8.netlify.app//)
 
 
 ## 💡 Gamgyul Blog를 코딩한 이유
