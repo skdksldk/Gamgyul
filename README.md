@@ -75,9 +75,11 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac
 [Gamgyul](https://vermillion-chaja-b8c8df.netlify.app/)
 
 
-## 💡 Gamgyul Blog를 코딩한 이유
+## 💡 Gamgyul Blog를 만든 이유
 
 다른 Blog를 만들면서 연습한 경험을 토대로 새로 배운 기술들을 통해 자신만의 블로그를 개설해서 기록하고 응용할수 있어서 선택했습니다.
+또한 개인적으로 다운받어서 개발 관련된 공부를 기록할수 있고 자신만의 블로그를 만들고 싶은 분들을 위해 만들었습니다. 
+
 
 ## 실행 방법
 
