@@ -27,7 +27,6 @@ Gamgyul은 이전의 sea blog를 만들고 나서 페이지네이션, 검색 기
 
 ### 2. 로그인
 
-![로그인]
 ![로그인](https://github.com/skdksldk/Gamgyul/assets/85090323/c5c49d00-77b0-4c0a-b519-a1c4727ebe60)
 
 - React-hook-form를 이용해 로그인 기능을 구축했습니다.
@@ -35,7 +34,6 @@ Gamgyul은 이전의 sea blog를 만들고 나서 페이지네이션, 검색 기
 
 ### 3. 회원가입
 
-![회원가입]
 ![회원가입](https://github.com/skdksldk/Gamgyul/assets/85090323/6c76d51d-ae9d-4d79-b12b-116839295982)
 
 
