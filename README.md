@@ -74,6 +74,8 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac
 
 ## 💻 완성본
 [Gamgyul](https://blog-demo-5qdd.onrender.com/)
+로그인 번호: admin1234@naver.com
+비밀 번호: 12345678
 💡로딩 시간이 걸리므로 로그인 이후 1~2분 정도 대기한 다음에 화면이 뜸💡
 
 ## 💡 Gamgyul Blog를 만든 이유
