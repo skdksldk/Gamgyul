@@ -73,7 +73,7 @@ https://github.com/skdksldk/Gamgyul/assets/85090323/156ad93c-7436-4b81-8312-b5ac
 [Gamgyul](https://vermillion-chaja-b8c8df.netlify.app/)
 
 ## 💻 완성본
-[Gamgyul](https://gamgyul-demo.onrender.com/)
+[Gamgyul](https://blog-demo-5qdd.onrender.com/)
 💡로딩 시간이 걸리므로 로그인 이후 1~2분 정도 대기한 다음에 화면이 뜸💡
 
 ## 💡 Gamgyul Blog를 만든 이유
